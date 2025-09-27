@@ -1,176 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arcos Landscaping and Lawncare</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-    }
-
-    header {
-      background-color: #1b5e20;
-      color: white;
-      padding: 1.5em 2em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 1.5em;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #a5d6a7;
-    }
-
-    .hero {
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-
-    .hero img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 2em;
-      border-radius: 10px;
-    }
-
-    .hero-text h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    .hero-text p {
-      font-size: 1.2em;
-    }
-
-    .section {
-      padding: 3em 2em;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-size: 2em;
-      margin-bottom: 1em;
-      text-align: center;
-    }
-
-    .about, .payments, .contact {
-      background-color: #f1f8e9;
-    }
-
-    .video-section .tiktok-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5em;
-    }
-
-    .payment-icons {
-      margin-top: 1em;
-      line-height: 2;
-      font-size: 1.2em;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #1b5e20;
-      color: white;
-      text-align: center;
-      padding: 2em 1em;
-      margin-top: 2em;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LordsRecruiter Ministry</title>
+  <meta name="description" content="Anchored in Christ. Recruiting souls to Jesus.">
+  <link rel="icon" href="assets/logo.png?v=3">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Arcos Landscaping</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#payments">Payments</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Top Nav -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png?v=3" alt="Logo" class="nav-logo">
+      </a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#beliefs">Beliefs</a>
+        <a href="#sermons">Sermons</a>
+        <a href="#events">Events</a>
+        <a href="#give">Give</a>
+        <a href="#prayer">Prayer</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
 
-  <section class="hero">
-    <img src="hero-image.png" alt="Fresh green lawn">
-    <div class="hero-text">
-      <h1>Lawn Perfection Starts Here</h1>
-      <p>Professional and affordable landscaping services across North Carolina</p>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <img src="assets/logo.png?v=3" alt="Lords Recruiter Ministry" class="hero-logo">
+      <h1>LordsRecruiter Ministry</h1>
+      <p class="kicker">Est. 2006</p>
+      <p>Anchored in Christ • Serving our community with the Gospel, prayer, and discipleship.</p>
+      <div class="cta">
+        <a class="btn" href="#events">Plan a Visit</a>
+        <a class="btn alt" href="#sermons">Watch Sermons</a>
+        <a class="btn alt" href="#give">Give</a>
+      </div>
     </div>
   </section>
 
-  <section class="section about" id="about">
-    <h2>About Us</h2>
-    <p>Arcos Landscaping and Lawncare is proudly owned and operated by Florentino Arcos. Based in Winston-Salem, we proudly serve all of North Carolina with top-tier lawn care and landscaping solutions. From weekly maintenance to full transformations, your yard is our mission.</p>
-  </section>
+  <!-- About -->
+  <div class="container" id="about">
+    <span class="kicker">Who We Are</span>
+    <h2>About</h2>
+    <p>Founded in 2006, Lords Recruiter Ministry exists to proclaim Jesus, make disciples, and serve our city. Our name reflects our mission: to be <em>anchored</em> in Christ and to <em>recruit</em> souls into the Kingdom of God.</p>
+  </div>
 
-  <section class="section video-section">
-    <h2>See Us in Action</h2>
-    <div class="tiktok-wrapper">
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7495192233935736106" data-video-id="7495192233935736106" style="max-width: 325px;"><section>Loading…</section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7507402263850126635" data-video-id="7507402263850126635" style="max-width: 325px;"><section>Loading…</section></blockquote>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7512048636461649198" data-video-id="7512048636461649198" style="max-width: 325px;"><section>Loading…</section></blockquote>
+  <!-- Featured Logo -->
+  <div class="container" id="logo-feature">
+    <h2>Our Ministry Seal</h2>
+    <p class="muted">A symbol of being anchored in Christ.</p>
+    <img src="assets/logo-glow.png?v=3" alt="Lords Recruiter Ministry Seal" style="max-width:400px; display:block; margin:0 auto;">
+  </div>
+
+  <!-- Beliefs -->
+  <div class="container" id="beliefs">
+    <span class="kicker">What We Believe</span>
+    <h2>Beliefs (Summary)</h2>
+    <ul class="list">
+      <li>The Bible is the inspired Word of God.</li>
+      <li>One God: Father, Son, and Holy Spirit.</li>
+      <li>Salvation by grace through faith in Jesus Christ.</li>
+      <li>The Church is Christ’s body, called to make disciples.</li>
+      <li>Jesus will return; we live in hope and holiness.</li>
+    </ul>
+    <p class="muted">Update with your full statement & scripture references later.</p>
+  </div>
+
+  <!-- Sermons -->
+  <div class="container" id="sermons">
+    <span class="kicker">Messages</span>
+    <h2>Sermons</h2>
+
+    <!-- YouTube Live Embed -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/7QCRhg2roY4?si=Uex7XFa2fVd_48c0"
+        title="Live Sermon"
+        frameborder="0"
+        allowfullscreen></iframe>
     </div>
-    <script async src="https://www.tiktok.com/embed.js"></script>
-  </section>
 
-  <section class="section payments" id="payments">
-    <h2>Payment Options</h2>
-    <p>We accept multiple convenient payment methods:</p>
-    <div class="payment-icons">
-      💵 <strong>Cash App:</strong> <a href="https://cash.app/$FlorentinoArcos" target="_blank">$FlorentinoArcos</a><br>
-      🍎 <strong>Apple Pay:</strong> Send to <strong>(743) 444-0269</strong><br>
-      🏦 <strong>Zelle:</strong> Send to <strong>(743) 444-0269</strong><br>
-      🏦 <strong>Chime:</strong> <strong>$Florentino-Arcos-1</strong><br>
-      🐰 <strong>Venmo:</strong> <a href="https://venmo.com/@YourVenmoHandle" target="_blank">@YourVenmoHandle</a>
+    <!-- Button to YouTube Channel -->
+    <p style="text-align:center; margin-top:18px;">
+      <a class="btn" href="https://www.youtube.com/@nuevavidalive1492/featured" target="_blank">
+        Visit Our YouTube Channel
+      </a>
+    </p>
+  </div>
+
+  <!-- Events -->
+  <div class="container" id="events">
+    <span class="kicker">Gatherings</span>
+    <h2>Events & Service Times</h2>
+    <ul class="list">
+      <li><strong>Sunday Service:</strong></li>
+      <ul class="list">
+        <li>Prayer – 8:00 AM</li>
+        <li>Morning Prayer – 10:00 AM</li>
+        <li>Worship – 11:00 AM</li>
+        <li>Preaching follows Worship</li>
+      </ul>
+      <li><strong>Midweek Services:</strong></li>
+      <ul class="list">
+        <li>Tuesday – 7:00 PM to 9:00 PM</li>
+        <li>Thursday – 7:00 PM to 9:00 PM</li>
+      </ul>
+    </ul>
+    <p class="muted">Add your address and Google Maps link here.</p>
+  </div>
+
+  <!-- Give -->
+  <div class="container" id="give">
+    <span class="kicker">Worship Through Generosity</span>
+    <h2>Give</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Online</h3>
+        <p>Link to your giving platform.</p>
+        <p><a class="btn" href="#">Give Online</a></p>
+      </div>
+      <div class="card">
+        <h3>In Person</h3>
+        <p>Give during services by cash or check.</p>
+      </div>
+      <div class="card">
+        <h3>By Mail</h3>
+        <p>Mail to: <em>Add your mailing address</em>.</p>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Call or text us to schedule a service or get a free quote:</p>
-    <p><strong>(743) 444-0269</strong></p>
-  </section>
+  <!-- Prayer -->
+  <div class="container" id="prayer">
+    <span class="kicker">We're With You</span>
+    <h2>Prayer Requests</h2>
+    <form class="form" action="mailto:prayer@yourdomain.org" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input id="name" name="name" placeholder="Your name">
+      <label for="email">Email</label>
+      <input id="email" name="email" placeholder="you@example.com" type="email">
+      <label for="message">Prayer Request</label>
+      <textarea id="message" name="message" rows="6" placeholder="How can we pray?"></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p class="muted">Later, switch to Formspree or Netlify Forms for a nicer experience.</p>
+  </div>
 
+  <!-- Contact -->
+  <div class="container" id="contact">
+    <span class="kicker">Contact</span>
+    <h2>Get In Touch</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:info@yourdomain.org">info@yourdomain.org</a></p>
+      </div>
+      <div class="card">
+        <h3>Address</h3>
+        <p>Add your address + Google Maps link.</p>
+      </div>
+      <div class="card">
+        <h3>Social</h3>
+        <p>Facebook • Instagram • YouTube</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Arcos Landscaping and Lawncare. All rights reserved.</p>
+    <div class="foot">
+      <div><strong>Lords Recruiter Ministry</strong> <span class="muted">• Est. 2006</span><br>
+        <span class="muted">Anchored in Christ. Recruiting souls to Jesus.</span>
+      </div>
+      <div class="muted">
+        © 2025 • <a href="mailto:info@yourdomain.org">info@yourdomain.org</a><br>
+        Site Owner: Alex Quiles
+      </div>
+    </div>
   </footer>
 </body>
 </html>
-
-
 
 
 
