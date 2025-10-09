@@ -393,8 +393,9 @@
 
     /* Video Section */
     .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 2em;
       margin-top: 3em;
     }
@@ -405,11 +406,21 @@
       padding: 1.5em;
       border: 1px solid rgba(76, 175, 80, 0.3);
       transition: all 0.3s ease;
+      max-width: 350px;
     }
 
     .video-wrapper:hover {
       transform: translateY(-5px);
       border-color: rgba(139, 195, 74, 0.5);
+    }
+
+    .video-wrapper blockquote {
+      margin: 0;
+    }
+
+    .tiktok-embed {
+      max-width: 100% !important;
+      min-width: 300px;
     }
 
     /* Payment Section */
@@ -595,16 +606,15 @@
     <p class="section-subtitle">Watch our team in action transforming lawns across North Carolina</p>
     <div class="video-grid">
       <div class="video-wrapper">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7495192233935736106" data-video-id="7495192233935736106" style="max-width: 100%;"><section>Loading…</section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7495192233935736106" data-video-id="7495192233935736106" style="max-width: 325px; min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@florencee_o/video/7495192233935736106">@florencee_o</a></section></blockquote>
       </div>
       <div class="video-wrapper">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7507402263850126635" data-video-id="7507402263850126635" style="max-width: 100%;"><section>Loading…</section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7507402263850126635" data-video-id="7507402263850126635" style="max-width: 325px; min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@florencee_o/video/7507402263850126635">@florencee_o</a></section></blockquote>
       </div>
       <div class="video-wrapper">
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7512048636461649198" data-video-id="7512048636461649198" style="max-width: 100%;"><section>Loading…</section></blockquote>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@florencee_o/video/7512048636461649198" data-video-id="7512048636461649198" style="max-width: 325px; min-width: 325px;"><section><a target="_blank" href="https://www.tiktok.com/@florencee_o/video/7512048636461649198">@florencee_o</a></section></blockquote>
       </div>
     </div>
-    <script async src="https://www.tiktok.com/embed.js"></script>
   </section>
 
   <section class="section" id="payments">
@@ -679,5 +689,6 @@
       });
     });
   </script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 </html>
